@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Montserrat:wght@400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <main>
+    <img src="images/bg-pattern.svg" alt="bg-pattern">
+    <section>
+      <div class="top-text-container">
+        <p class="top-bold-text">Simple, traffic based training</p>
+        <p class="top-gray-text">Sign up for our 30 day trial. No credit card required.</p>
+        <div class="circle">
+          <img src="images/pattern-circles.svg" alt="circle" width="175px">
+        </div>
+      </div>
+      
+      <div class="main-box-container">
+        <div class="main-section">
+          <p class="main-gray-text" id="views"></p>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" class="slider" id="myRange" value="1">  
+          </div>
+          <div class="price-container">
+            <p class="price-text" id="price-text"></p>
+            <p class="plan-text" id="plan-text"></p>
+          </div>
+          <div class="pick-plan-container">
+            <p class="plan-pick-text">Monthly Billing</p>
+            <input type="range" min="1" max="2" class="slider2" id="myRange2" value="1">
+            <p class="plan-pick-text">Yearly Billing</p>
+            <button class="discount">-%25</button>
+          </div>
+          <div class="line"></div>
+        </div>
+        <footer class="bottom-container">
+          <div class="check-container">
+            <div class="check-wrap">
+              <img src="images/icon-check.svg" alt="">
+              <p class="small-text">Unlimited websites</p>
+            </div>
+            <div class="check-wrap">
+              <img src="images/icon-check.svg" alt="">
+              <p class="small-text">100% data ownership</p>
+            </div>
+            <div class="check-wrap">
+              <img src="images/icon-check.svg" alt="">
+              <p class="small-text">Email reports</p>
+            </div>
+          </div>
+          <button class="start-trial">Start my trial</button>
+        </footer>
+      </div>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>

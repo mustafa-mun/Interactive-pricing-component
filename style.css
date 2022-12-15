@@ -1,0 +1,282 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: hsl(230, 100%, 99%);
+}
+p{
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+}
+main{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 75px;
+}
+.top-text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.top-bold-text{
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.top-gray-text{
+  font-size: 15px;
+  color: rgb(110, 109, 109);
+  margin-bottom: 6px;
+  width: 200px;
+}
+.circle{
+  position: absolute;
+  top: -30px;
+  right: 70px;
+}
+.main-box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 330px;
+  background-color: white;
+  margin-top: 100px;
+  border-radius: 10px;
+  padding-bottom: 35px;
+  box-shadow: 0px 0px 10px rgba(0,0,0, 0.1  );
+}
+.main-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-gray-text{
+  font-size: 15px;
+  color: rgb(110, 109, 109);
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+.slider-view-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slide-container{
+  position: relative;
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 280px; /* Full-width */
+  height: 10px; /* Specified height */
+  background: linear-gradient(90deg, rgb(214, 214, 214) 60%, rgb(214,214,214) 60%);
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  border-radius: 12px;
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: hsl(174, 86%, 45%);
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url('images/icon-slider.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 8px 15px rgba(30, 216, 223, 0.8);
+  transition: all 0.2s;
+}
+.slider::-webkit-slider-thumb:hover{
+  background: hsl(174, 62%, 67%);
+  background-image: url('images/icon-slider.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+
+
+
+  
+}
+.slider::-webkit-slider-thumb:active{
+  cursor: grab;
+  background: hsl(174, 85%, 35%);
+  background-image: url('images/icon-slider.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+}
+.slider2::-moz-range-thumb { /* Thumb stlye mozilla */
+  width: 40px;
+  height: 40px;
+  background: hsl(174, 86%, 45%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider2 {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 35px; /* Full-width */
+  height: 20px; /* Specified height */
+  background: hsl(223, 50%, 87%);
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  border-radius: 12px;
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin-left: 12px;
+  margin-right: 12px;
+  place-content: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.slider2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  border: solid rgb(182, 182, 182) 1px;
+}
+.slider2:hover{
+  background: hsl(174, 86%, 45%);
+}
+
+.slider2::-moz-range-thumb { /* Thumb stlye mozilla */
+  width: 40px;
+  height: 40px;
+  background: hsl(174, 86%, 45%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.price-container{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.price-text{
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.plan-text{
+  font-size: 14px;
+  color: rgb(110, 109, 109);
+}
+.pick-plan-container{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.plan-pick-text{
+  font-size: 13px;
+  color: rgb(110, 109, 109);
+}
+.discount{
+  border: none;
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 3px 8px;
+  margin-left: 4px;
+}
+.line{
+  width: 325px;
+  border: solid rgb(247, 245, 245) 0.2px;
+  margin-top: 45px;
+}
+.check-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.check-wrap{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.small-text{
+  font-size: 13px;
+  color: rgb(110, 109, 109);
+  margin-left: 15px;
+}
+.start-trial{
+  background-color: hsl(227, 35%, 25%);
+  color: rgb(224, 221, 221);
+  border: none;
+  padding: 12px 48px;
+  border-radius: 99px;
+  margin-top: 25px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.start-trial:hover{
+  color: white;
+}
+
+
+
+@media only screen and (min-width: 1439px) {
+  .top-bold-text{
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .top-gray-text{
+    font-size: 15px;
+    color: rgb(110, 109, 109);
+    margin-bottom: 6px;
+    width: 100%;
+  }
+  .main-box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    background-color: white;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding-bottom: 35px;
+  }
+  .slider-view-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom-container{
+    display: flex;
+    align-items: center;
+  }
+  .start-trial{
+    margin-left: 150px;
+    margin-bottom: 10px;
+  }
+}
